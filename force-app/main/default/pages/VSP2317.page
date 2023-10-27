@@ -1,0 +1,8 @@
+<apex:page >
+    <h1>Hello Agustin :D</h1>
+    <apex:pageBlock title="A title for 2317 Case">
+        <apex:pageBlockSection title="A section for 2317 Case">
+            Hello Again Agustin
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

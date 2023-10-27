@@ -1,0 +1,73 @@
+<template>
+  <div>
+  
+    <h1>Hello, need help?</h1>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        name="fName"
+        type="text"
+        required
+        label="First Name"
+        placeholder="Enter your first name"
+        onchange={handlefname}
+      ></lightning-input>
+    </div>
+
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        name="lName"
+        type="text"
+        required
+        label="Last Name"
+        placeholder="Enter your last name"
+        onchange={handlelname}
+      ></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        name="companyName"
+        type="text"
+        required
+        label="Company Name"
+        placeholder="Enter your Company"
+        onchange={handlecompanyName}
+      ></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        name="email"
+        type="email"
+        required
+        label="Email address"
+        placeholder="abc@abc.com"
+        id="email"
+        onchange={handlemail}
+      ></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        name="email"
+        type="phone"
+        required
+        label="Phone Number"
+        placeholder="(555) 555-5555"
+        onchange={handlephone}
+      ></lightning-input>
+    </div>
+    <div class="row">
+      <h2 class="header">Message</h2>
+      <lightning-textarea
+        name="message"
+        label="What you need help with"
+        placeholder="Enter your message"
+        onchange={handlemessage}
+      ></lightning-textarea>
+    </div>
+    <br />
+    <lightning-button
+      label="Submit"
+      slot="footer"
+      onclick={handleClick}
+    ></lightning-button>
+  </div>
+</template>

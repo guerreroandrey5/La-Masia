@@ -1,0 +1,15 @@
+<apex:page showHeader="true" standardStylesheets="false" doctype="html-5.0">
+    <header data-role="header" data-position="fixed">Headers</header>
+    <apex:outputPanel layout="block" html-data-role="panel" html-data-id="menu">
+        <apex:insert name="menu" />
+    </apex:outputPanel>
+    <h1>
+        Bodies
+    </h1>
+    <apex:outputPanel layout="block" html-data-role="panel" html-data-id="main">
+        <apex:insert name="main" />
+    </apex:outputPanel>
+    <footer data-role="footer" data-position="fixed">
+        <h4>Footesr</h4>
+    </footer>
+</apex:page>

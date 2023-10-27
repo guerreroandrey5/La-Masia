@@ -1,0 +1,29 @@
+<template>
+  <div class="slds-var-p-around_medium lgc-bg">
+    <lightning-input
+      type="number"
+      label="Enter a quantity"
+      placeholder="Type a quantity"
+      onchange={handleChanges}
+    ></lightning-input>
+  </div>
+  <lightning-combobox
+    name="percentage"
+    label="Percentage"
+    value={valueCB}
+    placeholder="Select a Percentage"
+    options={options}
+    onchange={handleChange}
+  ></lightning-combobox>
+  <br />
+  <lightning-button
+    variant="brand-outline"
+    label="Submit"
+    title="Press to calculate"
+    onclick={handleClick}
+    class="slds-var-m-left_x-small"
+  ></lightning-button>
+  <h2 class="slds-text-heading_medium slds-var-m-bottom_medium">
+    <br />The Calculated percentage is {calculatedValue}
+  </h2>
+</template>

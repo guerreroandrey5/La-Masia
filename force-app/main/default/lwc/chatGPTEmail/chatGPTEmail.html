@@ -1,0 +1,30 @@
+<template>
+  <div>
+    <h1>Generate an Email draft with ChatGPT!</h1>
+    <div class="slds-p-around_medium lgc-bg">
+      <lightning-input
+        type="text"
+        label="Type a prompt for ChatGPT"
+        placeholder="Enter a prompt to send it to ChatGPT"
+        onchange={handlePrompt}
+        value={tPrompt}
+      ></lightning-input>
+    </div>
+    <h1>Draft Generated with ChatGPT!</h1>
+    <div class="row">
+      <lightning-textarea
+        name="message"
+        placeholder="Here will be the answer from ChatGPT"
+        value={messagefromGPT}
+      ></lightning-textarea>
+    </div>
+    <br />
+    <div>
+      <lightning-button
+        label="Send to ChatGPT"
+        slot="footer"
+        onclick={handleSend}
+      ></lightning-button>
+    </div>
+  </div>
+</template>
